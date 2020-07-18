@@ -61,8 +61,6 @@ app.get('/', function(req,res){
 
 
 
-
-
 //Start listening
 app.listen(4200, () => {
   console.log('Express server started');
