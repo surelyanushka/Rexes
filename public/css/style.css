@@ -7,6 +7,10 @@ li{list-style: none;}
 
 a:hover{text-decoration:none;}
 
+.body{
+  overflow-x: hidden;
+}
+
 p{
   font-size: 1rem;
   line-height: 1.6;
@@ -100,6 +104,23 @@ p{
   height: 400px;
   margin: auto;
 }
+
+/* ******************FOOTER*****************/
+
+
+.footer{
+  background-color: rgb(76, 147, 228);
+  margin-top: 30px;
+}
+
+.footer-box{
+  margin-top: 30px;
+}
+
+.copyright{
+  color: #000!important;
+}
+
 
 /* ************************************SUBMITTED*************************** */
 .alert{

@@ -27,11 +27,13 @@ mongoose.connect(process.env.MONGO_URI, {
 
 //importing routes
 const appointmentcontroller = require('./controllers/appointmentcontroller');
-const blog = require('./controllers/blog');
+
+//blog route
+const blogcontroller = require('./controllers/blogcontroller');
 
 //middleware
 app.use('/Appointment', appointmentcontroller);
-app.use('/Blog',blog);
+app.use('/Blog',blogcontroller);
 
 // app.use(bodyParser.urlencoded({
 //   extended: true
@@ -56,7 +58,6 @@ app.get('/', function(req,res){
 // app.get('/blog',(req,res) =>{
 //   res.render('blog',{viewTitle: "Please enter details"});
 // });
-
 
 
 
