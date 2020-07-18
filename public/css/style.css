@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif; }
+
+a{text-decoration: none;}
+
+li{list-style: none;}
+
+a:hover{text-decoration:none;}
+
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #000;
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgb(0,168,255,0.4), rgb(0,168,255,0.4)), url('../Images/laproscpic.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: inset(0 0 11% 0);
+  position: relative; 
+}
+
+.header:before{
+  content:"";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left:0;
+  right:0;
+  opacity: 0.2;
+  z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #2d6979 100%)
+}
+
+.navbar:before{
+  content:"";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left:0;
+  right:0;
+  opacity: 0.2;
+  z-index: -1;
+  background: linear-gradient(to right, #ffff 0%, #ffffff 0%, #fffff2 100%)
+}
+
+ .nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+ 
+}  
+.header-section{
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.center-div{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+
+.header-buttons a{
+  border-radius: 100px;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color:white;
+  outline:none;
+  line-height: 1.5;
+}
+
+.header-buttons a:hover{
+  color: #1e5799;
+  background-color:white;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 #0000;
+}
+
+.center-div p{
+  font-size: 1.1rem;  
+  padding: 9px 0 8px 0;
+}
+
+.about-us-container{
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+
+/* ************************************SUBMITTED*************************** */
+.alert{
+  margin-top: 50px;
+}
