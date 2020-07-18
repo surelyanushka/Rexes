@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines":{
+    "node": "12.18.1"
+  },
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -17,6 +20,6 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.24",
     "nodemon": "^2.0.4"
-    
+
   }
 }
