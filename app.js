@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const cors = require("cors")
 const mongoose = require('mongoose');
+var Engine = require('engine');
+var engine = new Engine();
 require('dotenv/config');
 const bodyParser= require('body-parser');
 require('./models/appointment.model');
@@ -15,6 +17,13 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+//connect to db
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+},
+ () => console.log('connected to Db')
+);
 
 //importing routes
 const appointmentcontroller = require('./controllers/appointmentcontroller');
@@ -50,13 +59,7 @@ app.get('/', function(req,res){
 
 
 
-//connect to db
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-},
- () => console.log('connected to Db')
-);
+
 
 
 
