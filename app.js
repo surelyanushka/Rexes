@@ -21,10 +21,7 @@ app.use(bodyParser.urlencoded({
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-},
-//  () => console.log('connected to Db')
- () => console.log(process.env.MONGO_URI )
-);
+});
 
 //importing routes
 const appointmentcontroller = require('./controllers/appointmentcontroller');
@@ -64,6 +61,8 @@ app.get('/', function(req,res){
 
 
 //Start listening
-app.listen(4200, () => {
+
+let port = process.env.PORT | '3000';
+app.listen(port, () => {
   console.log('Express server started');
 });
