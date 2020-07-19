@@ -38,7 +38,8 @@ app.use('/Blog',blogcontroller);
 // }));
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
+console.log(path.join(__dirname, '/public'));
 app.use(cors());
 
 //views
