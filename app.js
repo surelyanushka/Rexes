@@ -38,7 +38,7 @@ app.use('/Blog',blogcontroller);
 // }));
 
 app.use(bodyParser.json());
-app.use(express.static(__dirname, + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 //views
@@ -66,3 +66,6 @@ let port = process.env.PORT || '3000';
 app.listen(port, () => {
   console.log('Express server started');
 });
+
+// Its done
+// okay, but the picture? okk wait
