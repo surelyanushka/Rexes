@@ -62,7 +62,7 @@ app.get('/', function(req,res){
 
 //Start listening
 
-let port = process.env.PORT || '5000';
+let port = process.env.PORT || '3000';
 app.listen(port, () => {
   console.log('Express server started');
 });
